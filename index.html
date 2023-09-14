@@ -9,15 +9,15 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="header__logo">
+      <a href="#" class="header__logo">
         <img src="./images/logo-img.svg" alt="Логотип" class="header__logo-img">
         <img src="./images/logo-title.svg" alt="Логотип" class="header__logo-title">
-      </div>
+      </a>
       <nav class="header__nav">
-        <a class="header__nav-item" href="">About</a>
-        <a class="header__nav-item" href="">Services</a>
-        <a class="header__nav-item" href="">Technologies</a>
-        <a class="header__nav-item" href="">How to</a>
+        <a class="header__nav-item" href="#">About</a>
+        <a class="header__nav-item" href="#">Services</a>
+        <a class="header__nav-item" href="#">Technologies</a>
+        <a class="header__nav-item" href="#">How to</a>
       </nav>
       <div class="header__contacts">
         <a class="header__contacts-item contact" href="#"> Contact us</a>
@@ -171,8 +171,97 @@
             Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
           </p>
         </div>
+        <div class="process__container">
+          <img class="process__container-vector" src="./images/tech-vector.png" alt="">
+          <div class="process__container-item">
+            <div class="process__container-item-round">
+              <p class="process__container-item-round-number">01</p>
+            </div>
+            <p class="process__container-item-text">3D Conception & Design</p>
+          </div>
+          <div class="process__container-item">
+            <div class="process__container-item-round">
+              <p class="process__container-item-round-number">02</p>
+            </div>
+            <p class="process__container-item-text">Interaction Design</p>
+          </div>
+          <div class="process__container-item">
+            <div class="process__container-item-round">
+              <p class="process__container-item-round-number">03</p>
+            </div>
+            <p class="process__container-item-text">VR World User Testing</p>
+          </div>
+          <div class="process__container-item">
+            <div class="process__container-item-round">
+              <p class="process__container-item-round-number">04</p>
+            </div>
+            <p class="process__container-item-text">Hydra VR Deploy</p>
+          </div>
+        </div>
+      </section>
+      <section class="join">
+        <div class="join__container">
+          <h3 class="join__container-title">Join Hydra</h3>
+          <p class="join__container-subtitle">Let’s Build Your VR Experience</p>
+          <form class="join__container-form" action="">
+            <div class="join__container-form-input">
+              <input class="join__container-form-input-item" style="grid-area: item-1" type="text" name="name" placeholder="First Name">
+              <input class="join__container-form-input-item" style="grid-area: item-2" type="text" name="surname" placeholder="Last Name">
+              <input class="join__container-form-input-item" style="grid-area: item-3" type="email" name="email" placeholder="Email">
+              <input class="join__container-form-input-item" style="grid-area: item-4" type="tel" name="tel" placeholder="Phone Number">
+              <input class="join__container-form-input-item" style="grid-area: item-5" type="text" placeholder="Subject">
+              <textarea class="join__container-form-input-item item-6" style="grid-area: item-6" type="text" placeholder="Tell Us Something..."></textarea>
+            </div>
+            <button class="join__container-form-btn">Send to Hydra</button>
+          </form>
+        </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="#" class="footer__logo">
+          <img class="footer__logo-img" src="./images/logo-img.svg" alt="Лого">
+        </a>
+        <nav class="footer__nav">
+          <a class="footer__nav-item" href="">About</a>
+          <a class="footer__nav-item" href="">Services</a>
+          <a class="footer__nav-item" href="">Technologies</a>
+          <a class="footer__nav-item" href="">How to</a>
+          <a class="footer__nav-item" href="">Join Hydra</a>
+        </nav>
+        <nav class="footer__nav">
+          <a class="footer__nav-item" href="">F.A.Q</a>
+          <a class="footer__nav-item" href="">Sitemap</a>
+          <a class="footer__nav-item" href="">Conditions</a>
+          <a class="footer__nav-item" href="">Licenses</a>
+        </nav>
+        <div class="footer__networks">
+          <p class="footer__networks-text footer__nav-item">Socialize with Hydra</p>
+          <div class="footer__networks-container">
+            <a href="#" class="footer__networks-container-link">
+              <img class="footer__networks-container-link-icon" src="./images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="#" class="footer__networks-container-link">
+              <img class="footer__networks-container-link-icon" src="./images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="#" class="footer__networks-container-link">
+              <img class="footer__networks-container-link-icon" src="./images/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="#" class="footer__networks-container-link">
+              <img class="footer__networks-container-link-icon" src="./images/youtube.svg" alt="Youtube">
+            </a>
+            <a href="#" class="footer__networks-container-link">
+              <img class="footer__networks-container-link-icon" src="./images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="#" class="footer__networks-container-link">
+              <img class="footer__networks-container-link-icon" src="./images/pinterest.svg" alt="Pinterest">
+            </a>
+          </div>
+          <a class="footer__networks-btn" href="#">Build your world</a>
+        </div>
+      </div>
+      <p class="footer__copyright">2023 &#169; Anastasia Muravyeva</p>
+    </footer>
   </div>
 </body>
 </html>
