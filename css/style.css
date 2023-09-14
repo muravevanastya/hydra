@@ -138,7 +138,6 @@ body {
   text-decoration: none;
   border-radius: 40px;
   margin-right: 40px;
-  cursor: pointer;
 }
 .home__container-description-link-btn:hover {
   opacity: 0.7;
@@ -170,13 +169,13 @@ body {
   position: absolute;
   z-index: -1;
   top: 160px;
-  right: -88px;
+  right: -65px;
 }
 .home__container-image-vector-3 {
   position: absolute;
   z-index: -1;
   top: -89px;
-  right: -85px;
+  right: 20px;
 }
 .home__info {
   background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
@@ -592,6 +591,19 @@ body {
 .footer__container {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+.footer__container-vector-2 {
+  position: absolute;
+  top: -318px;
+  left: -82px;
+  z-index: -1;
+}
+.footer__container-vector-3 {
+  position: absolute;
+  top: -38px;
+  left: -84px;
+  z-index: -1;
 }
 .footer__logo-img {
   width: 185px;
