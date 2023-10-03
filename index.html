@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hydra</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
 </head>
 <body>
   <div class="container">
@@ -43,28 +45,32 @@
             <img src="./images/home-image.jpg" alt="" class="home__container-image-img">
           </div>
         </div>
-        <div class="home__info">
-          <div class="home__info-container">
-            <img src="./images/place.svg" alt="" class="home__info-container-img">
-            <div class="home__info-container-item">
-              <p class="home__info-container-item-title">Pay Us a Visit</p>
-              <p class="home__info-container-item-text">Union St, Seattle, WA 98101, United States</p>
+        <div class="home__info swiper-container">
+          <div class="home__info-wrapper swiper-wrapper">
+            <div class="home__info-wrapper-container swiper-slide">
+              <img src="./images/place.svg" alt="" class="home__info-wrapper-container-img">
+              <div class="home__info-wrapper-container-item">
+                <p class="home__info-wrapper-container-item-title">Pay Us a Visit</p>
+                <p class="home__info-wrapper-container-item-text">Union St, Seattle, WA 98101, United States</p>
+              </div>
+            </div>
+            <div class="home__info-wrapper-container swiper-slide">
+              <img src="./images/phone.svg" alt="" class="home__info-wrapper-container-img">
+              <div class="home__info-wrapper-container-item">
+                <p class="home__info-wrapper-container-item-title">Give Us a Call</p>
+                <p class="home__info-wrapper-container-item-text">(110) 1111-1010</p>
+              </div>
+            </div>
+            <div class="home__info-wrapper-container swiper-slide">
+              <img src="./images/email.svg" alt="" class="home__info-wrapper-container-img">
+              <div class="home__info-wrapper-container-item">
+                <p class="home__info-wrapper-container-item-title">Send Us a Message</p>
+                <p class="home__info-wrapper-container-item-text">Contact@HydraVTech.com</p>
+              </div>
             </div>
           </div>
-          <div class="home__info-container">
-            <img src="./images/phone.svg" alt="" class="home__info-container-img">
-            <div class="home__info-container-item">
-              <p class="home__info-container-item-title">Give Us a Call</p>
-              <p class="home__info-container-item-text">(110) 1111-1010</p>
-            </div>
-          </div>
-          <div class="home__info-container">
-            <img src="./images/email.svg" alt="" class="home__info-container-img">
-            <div class="home__info-container-item">
-              <p class="home__info-container-item-title">Send Us a Message</p>
-              <p class="home__info-container-item-text">Contact@HydraVTech.com</p>
-            </div>
-          </div>
+          <img class="home__info-button-next" src="./images/chevron-circle-right.svg" alt="Кнопка 'далее'">
+          <img class="home__info-button-prev" src="./images/chevron-circle-left.svg" alt="Кнопка 'назад'">
         </div>
       </section>
       <section class="about">
@@ -265,5 +271,8 @@
       <p class="footer__copyright">2023 &#169; Anastasia Muravyeva</p>
     </footer>
   </div>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>

@@ -180,44 +180,51 @@ body{
     }
   }
   &__info {
-    background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
     box-shadow: 0px 4px 4px 0px #C0B7E803;
     border-radius: 90px;
     display: flex;
     justify-content: space-between;
     padding: 28px 39px;
-    &-container {
-      display: flex;
-      width: 100%;
-      border-right: 1px solid #C0B7E854;
-      justify-content: center;
-      min-height: 110px;
-      align-items: center;
-      &-img {
-        width: 45px;
-        height: 45px;
-        margin: 0 30px;
+    &-wrapper {
+      &-container {
+        display: flex;
+        width: 100%;
+        border-right: 1px solid #C0B7E854;
+        justify-content: center;
+        min-height: 110px;
+        align-items: center;
+        padding-right: 20px;
+        &-img {
+          width: 45px;
+          height: 45px;
+          margin: 0 30px;
+        }
+        &-item {
+          margin-right: 15px;
+          &-title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+          }
+          &-text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+          }
+        }
       }
-      &-item {
-        margin-right: 15px;
-        &-title {
-          font-weight: 700;
-          font-size: 24px;
-          line-height: 29px;
-          color: #FFFFFF;
-          margin-bottom: 10px;
-        }
-        &-text {
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 17px;
-          color: #FFFFFF;
-        }
+      &-container:last-of-type {
+        border-right: none;
+        padding-left: 45px;
       }
     }
-    &-container:last-of-type {
-      border-right: none;
-    }
+  }
+  .swiper-slide {
+    display: flex;
   }
 }
 
@@ -762,17 +769,17 @@ body{
     margin-top: 0;
   }
 
-  .home__info-container-img {
+  .home__info-wrapper-container-img {
     width: 35px;
     height: 35px;
   }
 
-  .home__info-container-item-title {
+  .home__info-wrapper-container-item-title {
     font-size: 22px;
     line-height: 27px;
   }
 
-  .home__info-container-item-text {
+  .home__info-wrapper-container-item-text {
     font-size: 12px;
     line-height: 15px;
   }
@@ -916,12 +923,12 @@ body{
 }
 
 @media screen and (max-width: 960px) {
-.home__container-image {
-  width: 408px;
-  height: 328px;
-  &-img {
-    width: 370px;
-    height: 295px;
+  .home__container-image {
+    width: 408px;
+    height: 328px;
+    &-img {
+      width: 370px;
+      height: 295px;
     }
   }
 
@@ -948,13 +955,13 @@ body{
     }
   }
 
-  .home__info-container-img {
+  .home__info-wrapper-container-img {
     width: 30px;
     height: 30px;
     margin: 0 18px;
   }
 
-  .home__info-container-item-title {
+  .home__info-wrapper-container-item-title {
     font-size: 17px;
     line-height: 20px;
   }
@@ -1111,8 +1118,46 @@ body{
       }
     }
     &__info {
-      &-container {
-        
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      &-wrapper {
+        &-container {
+          text-align: center;
+          border-right: 0;
+          padding: 0;
+          &-img {
+            width: 36px;
+            height: 36px;
+          }
+          &-item {
+            &-title {
+              font-size: 24px;
+            }
+            &-text {
+              font-size: 16px;
+            }
+          }
+        }
+        &-container:last-of-type {
+          padding-left: 0;
+        }
+      }
+      &-button-next {
+        position: absolute;
+        top: 60px;
+        right: 11px;
+        z-index: 1;
+        width: 44px;
+        height: 44px;
+      }
+      &-button-prev {
+        position: absolute;
+        top: 60px;
+        left: 11px;
+        z-index: 1;
+        width: 44px;
+        height: 44px;
       }
     }
   }
