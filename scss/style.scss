@@ -338,63 +338,90 @@ body{
 .services {
   padding-top: 111px;
   &__cards {
-    margin-top: 78px;
-    display: flex;
-    justify-content: space-between;
-    &-item {
-      background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
-      border-radius: 40px;
-      // width: 310px;
+    &-wrapper {
+      // position: relative;
+      margin-top: 78px;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-right: 11px;
-      &-photo {
-        width: 219px;
-        height: 219px;
-        border-radius: 50%;
-        background: #0E0E0E52;
-        padding: 14px;
-        margin-top: 23px;
-      }
-      &-title {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 29px;
-        color: #FFFFFF;
-        text-transform: uppercase;
-        margin-top: 21px;
-        border-bottom: 1px solid #C0B7E854;
-        padding-bottom: 17.5px;
-      }
-      &-text {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 19px;
-        color: #FFFFFF;
-        margin-top: 21.5px;
-        width: 100%;
-        padding: 0 25px;
-      }
-      &-btn {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 15px;
-        color: #343045;
-        padding: 16px 39px;
-        background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+      justify-content: space-between;
+      &-item {
+        position: relative;
+        background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
         border-radius: 40px;
-        text-decoration: none;
-        text-transform: uppercase;
-        margin: 35px 0 40px;
+        // width: 310px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 11px;
+        &-photo {
+          width: 219px;
+          height: 219px;
+          border-radius: 50%;
+          background: #0E0E0E52;
+          padding: 14px;
+          margin-top: 23px;
+        }
+        &-title {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 29px;
+          color: #FFFFFF;
+          text-transform: uppercase;
+          margin-top: 21px;
+          border-bottom: 1px solid #C0B7E854;
+          padding-bottom: 17.5px;
+        }
+        &-text {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 19px;
+          color: #FFFFFF;
+          margin-top: 21.5px;
+          width: 100%;
+          padding: 0 25px;
+        }
+        &-btn {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 15px;
+          color: #343045;
+          padding: 16px 39px;
+          background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+          border-radius: 40px;
+          text-decoration: none;
+          text-transform: uppercase;
+          margin: 35px 0 40px;
+        }
+        &-btn:hover {
+          opacity: 0.7;
+        }
       }
-      &-btn:hover {
-        opacity: 0.7;
+      &-item:last-of-type {
+        margin-right: 0;
       }
     }
-    &-item:last-of-type {
-      margin-right: 0;
-    }
+  }
+  .swiper-slide {
+    display: flex;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #0E0E0E52;
+  padding: 7px;
+  &__left {
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    border-radius: 50%;
+    padding: 14px 18px;
+  }
+  &__right {
+    rotate: 180deg;
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    border-radius: 50%;
+    padding: 14px 18px;
   }
 }
 
@@ -868,7 +895,7 @@ body{
     }
   }
 
-  .services__cards-item {
+  .services__cards-wrapper-item {
     &-photo {
       width: 180px;
       height: 180px;
@@ -1011,7 +1038,7 @@ body{
     height: 378px;
   }
 
-  .services__cards-item {
+  .services__cards-wrapper-item {
     &-photo {
       width: 150px;
       height: 150px;
@@ -1222,12 +1249,43 @@ body{
 
   .tech {
     &__container {
+      border-radius: 60px;
       &-title {
         font-size: 30px;
       }
       &-subtitle {
         font-size: 30px;
       }
+    }
+  }
+
+  .services__cards {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+    &-wrapper {
+      &-item {
+        margin-right: 0;
+        &-title {
+          font-size: 22px;
+        }
+        &-text {
+          font-size: 14px;
+        }
+      }
+    }
+    &-btn-prev,
+    &-btn-next {
+      position: absolute;
+      top: 46%;
+      z-index: 1;
+    }
+    &-btn-next {
+      right: 0;
+    }
+    &-btn-prev {
+      left: 0;
     }
   }
 
