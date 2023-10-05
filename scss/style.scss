@@ -465,25 +465,27 @@ body{
     }
   }
   &__companies {
-    margin-top: 41px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &-item-1 {
-      width: 174px;
-      height: 174px;
-    }
-    &-item-2 {
-      width: 252px;
-      height: 252px;
-    }
-    &-item-3 {
-      width: 263px;
-      height: 263px;
-    }
-    &-item-4 {
-      width: 282px;
-      height: 282px;
+    &-wrapper {
+      margin-top: 41px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-item-1 {
+        width: 174px;
+        height: 174px;
+      }
+      &-item-2 {
+        width: 252px;
+        height: 252px;
+      }
+      &-item-3 {
+        width: 263px;
+        height: 263px;
+      }
+      &-item-4 {
+        width: 282px;
+        height: 282px;
+      }
     }
   }
 }
@@ -494,51 +496,56 @@ body{
     width: 322px;
   }
   &__container {
-    position: relative;
-    margin-top: 95px;
-    display: flex;
-    justify-content: space-between;
-    &-vector {
-      position: absolute;
-      z-index: -1;
-      right: -35px;
-      top: 12px;
-      width: 100%;
-    }
-    &-item {
+    &-wrapper {
+      position: relative;
+      margin-top: 95px;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      &-round {
-        background: #0D0D0D52;
-        padding: 20px;
-        border-radius: 50%;
-        &-number {
-          font-weight: 700;
-          font-size: 64px;
-          line-height: 78px;
-          color: #343045;
-          background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%);
-          padding: 40px;
+      justify-content: space-between;
+      &-vector {
+        position: absolute;
+        z-index: -1;
+        right: -35px;
+        top: 12px;
+        width: 100%;
+      }
+      &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-round {
+          background: #0D0D0D52;
+          padding: 20px;
           border-radius: 50%;
+          &-number {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 78px;
+            color: #343045;
+            background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%);
+            padding: 40px;
+            border-radius: 50%;
+          }
+        }
+        &-text {
+          margin-top: 21px;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 29px;
+          color: #FFFFFF;
+          display: flex;
+          align-items: center;
+        }
+        &-text::before {
+          content: "";
+          background: url("../images/arrow-small-right.svg");
+          width: 67px;
+          height: 67px;
+          margin-right: 25px;
         }
       }
-      &-text {
-        margin-top: 21px;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 29px;
-        color: #FFFFFF;
-        display: flex;
-        align-items: center;
-      }
-      &-text::before {
-        content: "";
-        background: url("../images/arrow-small-right.svg");
-        width: 67px;
-        height: 67px;
-        margin-right: 25px;
-      }
+    }
+    .swiper-slide {
+      display: flex;
     }
   }
 }
@@ -811,7 +818,7 @@ body{
     line-height: 15px;
   }
 
-  .process__container-item-round {
+  .process__container-wrapper-item-round {
     padding: 15px;
     &-number {
       padding: 35px;
@@ -819,11 +826,11 @@ body{
     }
   }
 
-  .process__container-item-text {
+  .process__container-wrapper-item-text {
     font-size: 20px;
   }
 
-  .process__container-item-text::before {
+  .process__container-wrapper-item-text::before {
     margin-right: 13px;
   }
 }
@@ -839,7 +846,7 @@ body{
     height: 36px;
   }
 
-  .process__container-item-text::before {
+  .process__container-wrapper-item-text::before {
     margin-right: 8px;
   }
 }
@@ -928,14 +935,14 @@ body{
     height: 222px;
   }
 
-  .process__container-item-round {
+  .process__container-wrapper-item-round {
     &-number {
       padding: 25px 30px;
       font-size: 56px;
     }
   }
 
-  .process__container-item-text {
+  .process__container-wrapper-item-text {
     font-size: 16px;
   }
 
@@ -1055,21 +1062,20 @@ body{
     }
   }
 
-  .process__container-item-round {
+  .process__container-wrapper-item-round {
     &-number {
       padding: 20px 30px;
       font-size: 50px;
     }
   }
 
-  .process__container-item-text {
+  .process__container-wrapper-item-text {
     font-size: 16px;
     text-align: center;
   }
 
-  .process__container-item-text::before {
-    width: 0;
-    height: 0;
+  .process__container-wrapper-item-text::before {
+    display: none;
   }
 
   .join__container-title {
@@ -1247,20 +1253,11 @@ body{
     }
   }
 
-  .tech {
-    &__container {
-      border-radius: 60px;
-      &-title {
-        font-size: 30px;
-      }
-      &-subtitle {
-        font-size: 30px;
-      }
-    }
+  .services__container {
+    position: relative;
   }
 
   .services__cards {
-    position: relative;
     overflow: hidden;
     width: 70%;
     margin: auto;
@@ -1282,10 +1279,72 @@ body{
       z-index: 1;
     }
     &-btn-next {
-      right: 0;
+      right: 68px;
     }
     &-btn-prev {
-      left: 0;
+      left: 68px;
+    }
+  }
+
+  .tech {
+    &__container {
+      border-radius: 60px;
+      &-title {
+        font-size: 30px;
+      }
+      &-subtitle {
+        font-size: 30px;
+      }
+    }
+    &__images {
+      position: relative;
+    }
+    &__companies {
+      width: 36%;
+      overflow: hidden;
+      margin: 50px auto 0;
+      &-btn-prev,
+      &-btn-next {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+      }
+      &-btn-next {
+        right: 82px;
+      }
+      &-btn-prev {
+        left: 82px;
+      }
+    }
+  }
+
+  .process__numbers {
+    position: relative;
+  }
+
+  .process {
+    &__container {
+      width: 100%;
+      overflow: hidden;
+      margin: auto;
+      &-wrapper {
+        margin-top: 30px;
+        &-vector {
+          display: none;
+        }
+      }
+      &-btn-prev,
+      &-btn-next {
+        position: absolute;
+        top: 85%;
+        z-index: 1;
+      }
+      &-btn-next {
+        right: 68px;
+      }
+      &-btn-prev {
+        left: 68px;
+      }
     }
   }
 
