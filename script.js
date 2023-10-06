@@ -10,6 +10,7 @@ const homeSwiper = new Swiper('.home__info', {
     nextEl: '.home__info-button-next',
     prevEl: '.home__info-button-prev',
   },
+  spaceBetween: 38,
 });
 
 const servicesSwiper = new Swiper('.services__cards', {
