@@ -430,6 +430,8 @@ body{
   &__container {
     position: relative;
     background-image: url("../images/tech-photo.jpg");
+    background-position: center;
+    background-size: cover;
     box-shadow: 0px 4px 4px 0px #C0B7E803;
     border-radius: 160px;
     height: 303px;
@@ -485,6 +487,9 @@ body{
       &-item-4 {
         width: 282px;
         height: 282px;
+      }
+      .swiper-slide {
+        height: 174px;
       }
     }
   }
@@ -559,6 +564,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 89%;
+    margin: auto;
     &-title {
       font-weight: 700;
       font-size: 36px;
@@ -1248,6 +1255,7 @@ body{
         &-btn {
           width: 100%;
           text-align: center;
+          font-size: 14px;
         }
       }
     }
@@ -1264,11 +1272,20 @@ body{
     &-wrapper {
       &-item {
         margin-right: 0;
+        &-photo {
+          width: 190px;
+          height: 190px;
+        }
         &-title {
-          font-size: 22px;
+          font-size: 24px;
         }
         &-text {
+          font-size: 12px;
+        }
+        &-btn {
           font-size: 14px;
+          width: calc(100% - 34px * 2);
+          text-align: center;
         }
       }
     }
@@ -1300,20 +1317,23 @@ body{
       position: relative;
     }
     &__companies {
-      width: 36%;
+      width: 256px;
       overflow: hidden;
       margin: 50px auto 0;
       &-btn-prev,
       &-btn-next {
         position: absolute;
-        top: 50%;
+        top: 46%;
         z-index: 1;
       }
       &-btn-next {
-        right: 82px;
+        right: 46px;
       }
       &-btn-prev {
-        left: 82px;
+        left: 46px;
+      }
+      .swiper-slide {
+        height: 256px;
       }
     }
   }
@@ -1329,6 +1349,18 @@ body{
       margin: auto;
       &-wrapper {
         margin-top: 30px;
+        &-item {
+          &-round {
+            padding: 19px;
+            &-number {
+              padding: 41px 46px;
+              font-size: 64px;
+            }
+          }
+          &-text {
+            font-size: 24px;
+          }
+        }
         &-vector {
           display: none;
         }
@@ -1336,14 +1368,14 @@ body{
       &-btn-prev,
       &-btn-next {
         position: absolute;
-        top: 85%;
+        top: 82%;
         z-index: 1;
       }
       &-btn-next {
-        right: 68px;
+        right: 22px;
       }
       &-btn-prev {
-        left: 68px;
+        left: 22px;
       }
     }
   }
@@ -1412,3 +1444,22 @@ body{
     }
   }
 }
+
+// @media screen and (max-width: 650px) {
+//   .tech {
+//     &__container {
+//       height: 218px;
+//       &-title {
+//         font-size: 24px;
+//       }
+//       &-subtitle {
+//         font-size: 24px;
+//       }
+//       &-arrow {
+//         &-img {
+
+//         }
+//       }
+//     }
+//   }
+// }
