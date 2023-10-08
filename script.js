@@ -53,5 +53,14 @@ const processSwiper = new Swiper('.process__container', {
     nextEl: '.process__container-btn-next',
     prevEl: '.process__container-btn-prev',
   },
-  // spaceBetween: 20,
 });
+
+const burgerMenu = document.querySelector('.header__burger');
+const links = document.querySelector('.header__container');
+const body = document.querySelector('body')
+
+burgerMenu.addEventListener('click', () => {
+  links.classList.toggle('active');
+  burgerMenu.classList.toggle('active');
+  body.classList.toggle('lock')
+})

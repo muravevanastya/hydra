@@ -6,7 +6,6 @@
   <title>Hydra</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
 </head>
 <body>
   <div class="container">
@@ -15,15 +14,20 @@
         <img src="./images/logo-img.svg" alt="Логотип" class="header__logo-img">
         <img src="./images/logo-title.svg" alt="Логотип" class="header__logo-title">
       </a>
-      <nav class="header__nav">
-        <a class="header__nav-item" href="#">About</a>
-        <a class="header__nav-item" href="#">Services</a>
-        <a class="header__nav-item" href="#">Technologies</a>
-        <a class="header__nav-item" href="#">How to</a>
-      </nav>
-      <div class="header__contacts">
-        <a class="header__contacts-item contact" href="#"> Contact us</a>
-        <a class="header__contacts-item login" href="#">Join Hydra</a>
+      <div class="header__container">
+        <nav class="header__nav">
+          <a class="header__nav-item" href="#">About</a>
+          <a class="header__nav-item" href="#">Services</a>
+          <a class="header__nav-item" href="#">Technologies</a>
+          <a class="header__nav-item" href="#">How to</a>
+        </nav>
+        <div class="header__contacts">
+          <a class="header__contacts-item contact" href="#"> Contact us</a>
+          <a class="header__contacts-item login" href="#">Join Hydra</a>
+        </div>
+      </div>
+      <div class="header__burger">
+        <span></span>
       </div>
     </header>
     <main>
@@ -301,7 +305,6 @@
       <p class="footer__copyright">2023 &#169; Anastasia Muravyeva</p>
     </footer>
   </div>
-  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="./script.js"></script>
 </body>
