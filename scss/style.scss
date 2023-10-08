@@ -4,9 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body{
+body {
   background-color: #302C42;
   font-family: 'Montserrat', arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1193,7 +1194,8 @@ body{
       height: 26px;
       z-index: 5;
       right: 40px;
-      margin-top: 26px
+      margin-top: 26px;
+      cursor: pointer;
     }
     &__burger::before,
     &__burger::after {
@@ -1902,7 +1904,7 @@ body{
     right: -5px;
   }
 
-  .home__info-button-left {
+  .home__info-button-prev {
     left: -5px;
   }
 
@@ -1921,7 +1923,7 @@ body{
 
   .services__cards-btn-prev, 
   .services__cards-btn-next {
-    top: 40%;
+    top: 36%;
   }
 
   .footer__networks-container-link {

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1091,6 +1092,7 @@ body {
     z-index: 5;
     right: 40px;
     margin-top: 26px;
+    cursor: pointer;
   }
   .header__burger::before, .header__burger::after {
     content: "";
@@ -1679,7 +1681,7 @@ body {
   .home__info-button-next {
     right: -5px;
   }
-  .home__info-button-left {
+  .home__info-button-prev {
     left: -5px;
   }
   .about__description-photo {
@@ -1694,7 +1696,7 @@ body {
   }
   .services__cards-btn-prev,
   .services__cards-btn-next {
-    top: 40%;
+    top: 36%;
   }
   .footer__networks-container-link {
     margin-right: 12px;

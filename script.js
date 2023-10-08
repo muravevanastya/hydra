@@ -1,3 +1,22 @@
+const burgerMenu = document.querySelector('.header__burger');
+const links = document.querySelector('.header__container');
+const menuItems = document.querySelectorAll('.header__nav-item');
+const body = document.querySelector('body')
+
+burgerMenu.addEventListener('click', () => {
+  links.classList.toggle('active');
+  burgerMenu.classList.toggle('active');
+  body.classList.toggle('lock')
+})
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    links.classList.remove('active');
+    burgerMenu.classList.remove('active');
+    body.classList.remove('lock');
+  });
+});
+
 const homeSwiper = new Swiper('.home__info', {
   slidesPerView: 1,
   loop: true,
@@ -54,13 +73,3 @@ const processSwiper = new Swiper('.process__container', {
     prevEl: '.process__container-btn-prev',
   },
 });
-
-const burgerMenu = document.querySelector('.header__burger');
-const links = document.querySelector('.header__container');
-const body = document.querySelector('body')
-
-burgerMenu.addEventListener('click', () => {
-  links.classList.toggle('active');
-  burgerMenu.classList.toggle('active');
-  body.classList.toggle('lock')
-})
