@@ -28,6 +28,7 @@ body {
     display: flex;
     max-width: 200px;
     align-items: center;
+    transition: transform 0.2s ease-in-out;
     &-img {
       width: 102px;
       height: 103px;
@@ -39,7 +40,7 @@ body {
     }
   }
   &__logo:hover {
-    opacity: 0.7;
+    transform: scale(1.05);
   }
   &__burger {
     display: none;
@@ -49,7 +50,6 @@ body {
     align-items: center;
   }
   &__nav {
-    // margin: 0 30px 0 93px;
     margin: 0 132px 0 93px;
     &-item {
       color: #FFFFFF;
@@ -61,7 +61,7 @@ body {
       margin-right: 36px;
     }
     &-item:hover{
-      opacity: 0.7;
+      opacity: 0.8;
     }
     &-item:last-of-type {
       margin-right: 0;
@@ -77,9 +77,10 @@ body {
       text-transform: uppercase;
       padding: 17px 38px;
       align-self: center;
+      transition: transform 0.2s ease-in-out;
     }
     &-item:hover {
-      opacity: 0.7;
+      transform: scale(1.07);
     }
     .contact{
       color: #FFFFFF;
@@ -145,9 +146,10 @@ body {
           text-decoration: none;
           border-radius: 40px;
           margin-right: 40px;
+          transition: transform 0.2s ease-in-out;
         }
         &-btn:hover {
-          opacity: 0.7;
+          transform: scale(1.07);
         }
         &-arrow {
           width: 42px;
@@ -336,9 +338,10 @@ body {
         padding: 17px 47px 16px 39px;
         text-transform: uppercase;
         text-decoration: none;
+        transition: transform 0.2s ease-in-out;
       }
       &-btn:hover {
-        opacity: 0.7;
+        transform: scale(1.07);
       }
     }
   }
@@ -348,7 +351,6 @@ body {
   padding-top: 111px;
   &__cards {
     &-wrapper {
-      // position: relative;
       margin-top: 78px;
       display: flex;
       justify-content: space-between;
@@ -356,7 +358,6 @@ body {
         position: relative;
         background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
         border-radius: 40px;
-        // width: 310px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -399,9 +400,10 @@ body {
           text-decoration: none;
           text-transform: uppercase;
           margin: 35px 0 40px;
+          transition: transform 0.2s ease-in-out;
         }
         &-btn:hover {
-          opacity: 0.7;
+          transform: scale(1.07);
         }
       }
       &-item:last-of-type {
@@ -421,6 +423,7 @@ body {
   border-radius: 50%;
   background-color: #0E0E0E52;
   padding: 7px;
+  transition: all 0.3s ease 0s;
   &__left {
     background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
     border-radius: 50%;
@@ -432,6 +435,10 @@ body {
     border-radius: 50%;
     padding: 14px 18px;
   }
+}
+
+.btn:hover {
+  transform: scale(1.07);
 }
 
 .tech {
@@ -650,9 +657,11 @@ body {
         border: none;
         text-transform: uppercase;
         margin: 51px 0 84px;
+        transition: all 0.3s ease 0s;
+        
       }
       &-btn:hover {
-        opacity: 0.7;
+        transform: scale(1.05);
         cursor: pointer;
       }
     }
@@ -684,9 +693,10 @@ body {
   &__logo-img {
     width: 185px;
     height: 185px;
+    transition: all 0.3s ease 0s;
   }
   &__logo-img:hover {
-    opacity: 0.7;
+    transform: scale(1.07);
   }
   &__nav {
     display: flex;
@@ -699,9 +709,10 @@ body {
       text-decoration: none;
       text-transform: uppercase;
       margin-bottom: 20px;
+      transition: all 0.3s ease 0s;
     }
     &-item:hover {
-      opacity: 0.7;
+      transform: scale(1.07);
     }
   }
   &__networks {
@@ -709,21 +720,23 @@ body {
       margin-bottom: 39px;
     }
     &-text:hover {
-      opacity: 1;
+      transform: scale(1);
     }
     &-container {
       margin-bottom: 49px;
       &-link {
         margin-right: 20px;
+        text-decoration: none;
         &-icon {
           width: 32px;
           height: 32px;
+          transition: all 0.3s ease 0s;
         }
         &-icon:last-of-type {
           margin-right: 0;
         }
         &-icon:hover {
-          opacity: 0.7;
+          transform: scale(1.2);
         }
       }
     }
@@ -737,9 +750,10 @@ body {
       padding: 17px 43px 16px 38px;
       text-transform: uppercase;
       text-decoration: none;
+      transition: all 0.3s ease 0s;
     }
     &-btn:hover {
-      opacity: 0.7;
+      transform: scale(1.07);
     }
   }
   &__copyright {
@@ -1368,6 +1382,7 @@ body {
         z-index: 1;
         width: 44px;
         height: 44px;
+        cursor: pointer;
       }
       &-button-prev {
         position: absolute;
@@ -1376,6 +1391,7 @@ body {
         z-index: 1;
         width: 44px;
         height: 44px;
+        cursor: pointer;
       }
     }
   }
